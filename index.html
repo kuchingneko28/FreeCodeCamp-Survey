@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Kuching Neko - Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Kuching Neko survey Form</h1>
+    <p id="description">What do you think about me :)</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name :
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email :
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+      <label for="number" id="number-label">
+        Age :
+        <input
+          type="number"
+          id="number"
+          min="10"
+          max="50"
+          placeholder="Enter your age"
+          required
+        />
+      </label>
+      <label for="dropdown" id="dropdown-label">
+        Are you one of my friends ?
+        <select id="dropdown">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+      <div>
+        <p>What do you thing about me</p>
+        <label for="radio" id="radio-label">
+          <input type="radio" name="radio" value="good" checked />Good
+        </label>
+        <label for="radio" id="radio-label">
+          <input type="radio" name="radio" value="bad" />Bad
+        </label>
+      </div>
+      <div>
+        <p>Choose 3 things that you like on me</p>
+        <label for="checkbox" id="checkbox-label">
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="very-nice"
+            checked
+          />Very nice
+        </label>
+        <label for="checkbox" id="checkbox-label">
+          <input type="checkbox" name="checkbox" value="good" />Good
+        </label>
+        <label for="checkbox" id="checkbox-label">
+          <input type="checkbox" name="checkbox" value="not-evil " />Not evil
+        </label>
+        <label for="checkbox" id="checkbox-label">
+          <input type="checkbox" name="checkbox" value="you-re-evil" />You're
+          evil
+        </label>
+        <label for="checkbox" id="checkbox-label">
+          <input type="checkbox" name="checkbox" value="i-hate-you" />I hate you
+        </label>
+        <label for="checkbox" id="checkbox-label">
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="i-ve-never-meet-you"
+          />I've never meet you
+        </label>
+      </div>
+      <div>
+        <p>Any comments or suggestions?</p>
+        <label for="text-area" id="checkbox-label">
+          <textarea
+            name="text-area"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
